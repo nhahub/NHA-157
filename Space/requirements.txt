@@ -1,0 +1,8 @@
+transformers
+torch
+accelerate
+openai
+gradio
+huggingface-hub
+bitsandbytes # CRITICAL for 4-bit loading
+
