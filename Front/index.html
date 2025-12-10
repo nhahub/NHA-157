@@ -2,109 +2,206 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Friendly Persona Chatbots</title>
+    <title>Cooking Is Fun!</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Poppins", Arial, sans-serif;
             text-align: center;
-            background-color: #f0f8ff;
-            padding: 50px;
+            background-color: #eef3fa;
+            padding: 40px 0;
             margin: 0;
         }
-        h1 {
-            margin-bottom: 50px;
+        .intro {
+            font-size: 20px;               /* bigger font for impact */
+            font-weight: 600;              /* bolder */
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto 50px auto;
+            line-height: 1.7;
+            padding: 25px 30px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* warm cooking colors */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .intro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #ff6b6b, #fcb045);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #ff6b6b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #ff6b6b, #fcb045);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
         .chat-section {
             display: flex;
             justify-content: center;
-            align-items: center;
-            gap: 30px;
-            margin-bottom: 50px;
+            align-items: flex-start;
+            gap: 40px;
+            margin: 50px auto;
+            width: 90%;
+            max-width: 1800px;
         }
+
         .image-bio {
+            width: 250px;
+            background: #ffffff;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            padding: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 250px;
+            transition: transform 0.3s ease;
         }
+
+        .image-bio:hover {
+            transform: translateY(-5px);
+        }
+
         .image-bio img {
-            border-radius: 15px;
-            width: 250px;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #ff6b6b;
+            transition: transform 0.3s ease;
         }
+
+        .image-bio img:hover {
+            transform: scale(1.05);
+        }
+
         .image-bio p {
             margin-top: 15px;
-            font-size: 16px;
-            color: #333;
-            line-height: 1.4;
+            font-size: 16px;             /* slightly larger */
+            font-weight: 700;            /* bold */
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(135deg, #ff6b6b, #fcb045);
+            padding: 15px 18px;          /* more padding for emphasis */
+            border-radius: 18px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* slightly stronger shadow */
+            transition: background 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
+
+        .image-bio p:hover {
+        background: linear-gradient(135deg, #fcb045, #ff6b6b);
+        transform: translateY(-3px);
+        text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
         .chatbox {
+            width: 850px;
+            height: 700px;
+            background: #ffffff;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
+
         .chatbox iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
             border: none;
-            border-radius: 10px;
-            width: 1000px;
-            height: 750px;
+        }
+
+        @media (max-width: 1200px) {
+            .chat-section {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .chatbox {
+                width: 95%;
+                height: 600px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Friendly Persona Chatbots</h1>
+    <h1>Cooking Is Fun!</h1>
 
-    <!-- Chatbot 1 -->
+    <p class="intro">
+        Welcome to our <span class="highlight">kitchen of chatbots</span> 🍳!<br>
+        Here, <span class="highlight">friendly AI chefs</span> are ready to chat, share tips, and make your cooking adventures <span class="highlight">exciting & easy</span>.<br>
+        Explore, ask questions, and discover new ideas because <span class="highlight">cooking is more fun</span> when you have a smart assistant by your side!
+    </p>
+
+    <!-- CHATBOT 1 -->
     <div class="chat-section">
         <div class="image-bio">
             <img src="images/Persona01.png" alt="Chatbot 1 Image">
-            <p>Friendly persona chatbot—designed to help, chat, and provide smart responses with a warm personality.</p>
+            <p>Grandma Chef 🍲  Whips up warm, friendly chats and serves advice with a sprinkle of love.</p>
         </div>
-        <div class="chatbox" style="background-color: #e6f2ff;">
+        <div class="chatbox">
             <iframe src="https://ehabbelllkasy01-Persona01-GrandmaChef.hf.space"></iframe>
         </div>
     </div>
 
-    <!-- Chatbot 2 -->
+    <!-- CHATBOT 2 -->
     <div class="chat-section">
         <div class="image-bio">
             <img src="images/Persona02.png" alt="Chatbot 2 Image">
-            <p>Second chatbot assistant—ready to provide advice, answer questions, and assist with a cheerful personality.</p>
+            <p>Rhymed Chef 🎵  Fun, witty, and full of rhymes; makes learning recipes a delightful rhyme-time.</p>
         </div>
-        <div class="chatbox" style="background-color: #fff0f5;">
+        <div class="chatbox">
             <iframe src="https://ehabbelllkasy01-Persona02-RhymedChef.hf.space"></iframe>
         </div>
     </div>
 
-    <!-- Chatbot 3 -->
+    <!-- CHATBOT 3 -->
     <div class="chat-section">
         <div class="image-bio">
             <img src="images/Persona03.png" alt="Chatbot 3 Image">
-            <p>Third chatbot—focused on providing professional guidance and smart answers for daily tasks.</p>
+            <p>Task Master Chef ✅ Organizes your cooking tasks, plans meals, and serves smart tips efficiently.</p>
         </div>
-        <div class="chatbox" style="background-color: #f0fff0;">
+        <div class="chatbox">
             <iframe src="https://ehabbelllkasy01-Persona03-DepressedChef.hf.space"></iframe>
         </div>
     </div>
 
-    <!-- Chatbot 4 -->
+    <!-- CHATBOT 4 -->
     <div class="chat-section">
         <div class="image-bio">
             <img src="images/Persona04.png" alt="Chatbot 4 Image">
-            <p>Fourth chatbot—offers creative ideas, brainstorming help, and friendly interaction for fun.</p>
+            <p>Creative Chef 🎨  Sparks your culinary imagination and brainstorms unique recipes with you.</p>
         </div>
-        <div class="chatbox" style="background-color: #fff8dc;">
+        <div class="chatbox">
             <iframe src="https://ehabbelllkasy01-Persona04-VeganChef.hf.space"></iframe>
         </div>
     </div>
 
-    <!-- Chatbot 5 -->
+    <!-- CHATBOT 5 -->
     <div class="chat-section">
         <div class="image-bio">
             <img src="images/Persona05.png" alt="Chatbot 5 Image">
-            <p>Fifth chatbot—specialized in technical support, explanations, and detailed guidance for users.</p>
+            <p>Techie Chef 💻  Explains cooking techniques clearly and guides you through complex recipes step by step.</p>
         </div>
-        <div class="chatbox" style="background-color: #f0f8ff;">
+        <div class="chatbox">
             <iframe src="https://ehabbelllkasy01-Persona05-SleepyChef.hf.space"></iframe>
         </div>
     </div>
